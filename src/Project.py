@@ -1,3 +1,9 @@
+
+# Copyright (C) 2015 Saurabh Sood
+# This file is licensed under the terms of the GNU General Public License
+# version 2.  This program is licensed "as is" without any warranty of any
+# kind, whether express or implied.
+
 class Project:
 	
 	
@@ -9,17 +15,18 @@ class Project:
 						"status":"None",
 						"dir":"None",
 						"exe":"None"}
-		def getName(self):
-			return self.Details["name"];
-		def getOrg(self):
-			return self.Details["org"];
-		def getBrief(self):
-			return self.Details["brief"];
-		def getStatus(self):
-			return self.Details["status"];
-		def runExe(self):
-			pass
-		def openDir(self):
-			pass
-		
 		self.Details.update();
+	def getName(self):
+		return self.Details["name"];
+	def getOrg(self):
+		return self.Details["org"];
+	def getBrief(self):
+		return self.Details["brief"];
+	def getStatus(self):
+		return self.Details["status"];
+	def runExe(self):
+		pass
+	def openDir(self):
+		pass
+		
+		
