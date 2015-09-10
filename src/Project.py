@@ -3,7 +3,7 @@
 # This file is licensed under the terms of the GNU General Public License
 # version 2.  This program is licensed "as is" without any warranty of any
 # kind, whether express or implied.
-import subprocess
+import os
 
 class Project:
 	
@@ -37,9 +37,11 @@ class Project:
 		return self.Details["exe"];
 	def runExe(self):
 		pass
+	def getDetails(self):
+		return self.Details
 	def openDir(self):
-		subprocess.Popen(r'explorer '+self.dir)
+		os.startfile(self.getDir())
 	def __str__(self):
 		return str(self.Details)
-		
+	
 		
